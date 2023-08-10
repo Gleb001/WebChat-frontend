@@ -1,0 +1,15 @@
+.icon-chats {
+    background-image: url("./data/any.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icon-friends {
+    background-image: url("./data/any1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icon-settings {
+    background-image: url("./data/any2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

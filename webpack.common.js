@@ -3,7 +3,7 @@
 const path = require("path");
 // plugins -------------------------------------------------- //
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // constants ================================================ //
 const ROOT_PATH = path.resolve(__dirname, ".");
@@ -32,15 +32,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|ts)x$/i,
+                test: /\.(js|ts)x?$/,
                 exclude: /node_modules/,
                 use: ["babel-loader"],
             },
             {
-                test: /\.s[a|c]ss$/i,
-                type: "css/auto",
+                test: /\.s[a|c]ss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    // MiniCssExtractPlugin.loader,
                     "style-loader",
                     "css-loader",
                     "sass-loader",
@@ -56,16 +55,17 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: SRC_PATH + "/index.html"
         }),
+        // new MiniCssExtractPlugin()
     ],
-    optimization: {
-        splitChunks: {
-            cacheGroups: {
-                defaultVendors: {
-                    name: "vendors",
-                    test: /node_modules/,
-                    chunks: "all",
-                }
-            }
-        },
-    },
+    // optimization: {
+    //     splitChunks: {
+    //         cacheGroups: {
+    //             defaultVendors: {
+    //                 name: "vendors",
+    //                 test: /node_modules/,
+    //                 chunks: "all",
+    //             }
+    //         }
+    //     },
+    // },
 };

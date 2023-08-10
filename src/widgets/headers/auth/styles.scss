@@ -1,0 +1,35 @@
+#auth-header {
+    
+    width: inherit;
+    margin-top: 20px;
+
+    background-color: var(--highlighted-backgound-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    z-index: 5;
+
+    position: fixed;
+
+    nav {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        margin-top: 0;
+
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+    }
+
+    
+}

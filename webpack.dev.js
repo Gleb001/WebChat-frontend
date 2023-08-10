@@ -11,18 +11,20 @@ const developmentConfig = {
         filename: "[name].js",
         compareBeforeEmit: false,
     },
-    watchOptions: {
-        ignored: /node_modules/,
-    },
+    devtool: "eval",
     devServer: {
         hot: true,
-        port: 9000,
         compress: true,
         static: {
             directory: path.resolve(__dirname, "./dist"),
         },
-        client:{
+        client: {
             overlay: true
+        },
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+            "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
         },
         open: true,
     },

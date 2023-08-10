@@ -1,0 +1,23 @@
+:root {
+
+    --primary-backgound-color:  #1B1D21;
+    --highlighted-backgound-color: #212326;
+
+    --active-color: #00BB3C;
+    --border-color: #7F8082;
+
+    --usuall-text-color: white;
+
+
+
+    /* --left-sidebar-color: #3F4144;
+    --main-window-color: #1B1D21;
+    --additional-window-color: #3F4144;
+
+
+    --inverse-usuall-text-color: black;
+
+    --form-color: #212326;
+    --active-link-color: #16181B; */
+
+}

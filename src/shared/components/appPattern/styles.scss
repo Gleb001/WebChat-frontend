@@ -1,0 +1,64 @@
+// app container
+#app-container {
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+// left sidebar
+#left-sidebar {
+    
+    background-color: var(--left-sidebar-color);
+    width: 105px;
+    height: 100%;
+
+    nav {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        a {
+            color: var(--usuall-text-color);
+            text-align: center;
+
+            width: 100px;
+            padding: 15px 0;
+        }
+        a[class=active] {
+            text-decoration: none;
+            background-color: var(--main-window-color);
+        }
+    
+    }
+
+}
+#main-window {
+    background-color: var(--main-window-color);
+    width: 100%;
+    height: 100%;
+}
+#additional-window {
+    background-color: var(--additional-window-color);
+    width: 100%;
+}
+@media screen and (max-width: 1024px) {
+    #app-container {
+        align-items: normal;
+        flex-direction: column;
+    }
+    #left-sidebar {
+
+        width: 100%;
+        height: auto;
+        
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 15px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+#auth-footer {
+
+    margin: 15px auto;
+    height: 50px;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        min-width: 300px;
+        max-width: 540px;
+
+    }
+
+}

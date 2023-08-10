@@ -1,0 +1,47 @@
+#change-password-dialog-box {
+
+    color: var(--usuall-text-color);
+
+    .title {
+
+        color: inherit;
+        font-size: 2em;
+        text-align: center;
+
+        margin: 15px 0 25px;
+
+    }
+
+    .description {
+
+        color: inherit;
+        line-height: 1.5em;
+        text-align: justify;
+
+        margin: 5px 0;
+
+    }
+
+    .button-show-prev-stage {
+
+        height: 40px;
+        width: 40px;
+
+        background-color: transparent;
+
+        color: inherit;
+
+        outline: none;
+        border: 1px solid var(--border-color);
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        transition: background-color .1s linear;
+    
+    }
+    .button-show-prev-stage:active {
+        background-color: var(--border-color);
+    }
+
+}

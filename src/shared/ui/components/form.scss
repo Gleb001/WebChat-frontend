@@ -1,0 +1,55 @@
+// main ===================================================== //
+.form-app {
+
+    color: var(--usuall-text-color);
+
+    // form's fields and buttons ---------------------------- //
+    input, button {
+
+        background-color: transparent;
+
+        color: inherit;
+        font-size: 14px;
+
+        width: 100%;
+        margin-top: 5px;
+
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+    
+        box-sizing: border-box;
+        padding: 12px 20px;
+
+    }
+
+    // submit elements -------------------------------------- //
+    input[type=submit], button[type=submit] {
+
+        width: 100%;
+        margin-top: 10px;
+
+        background-color: transparent;
+        border: 1px solid var(--active-color);
+        color: var(--active-color);
+    
+        cursor: pointer;
+    
+        transition: background-color .3s linear, color .3s linear;
+
+        &:hover {
+            background-color: var(--active-color);
+            color: var(--highlighted-backgound-color);
+        }
+
+    }
+
+    // label------------------------------------------------- //
+    label {
+        margin-bottom: 15px;
+        display: block;
+
+        line-height: 1.5em;
+    }
+    
+
+}

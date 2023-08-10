@@ -1,0 +1,24 @@
+.logo-app-container {
+
+    display: inline-block;
+
+    margin: 10px 0;
+    padding: 5px 0;
+
+    background-color: var(--primary-backgound-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    img {
+
+        padding: 5px;
+
+        height: 40px;
+        width: 40px;
+
+        color: var(--usuall-text-color);
+
+    }
+
+}

@@ -1,0 +1,30 @@
+// import =================================================== //
+// styles --------------------------------------------------- //
+@import "./styles/normalize.css";
+@import "./styles/constants.css";
+// special -------------------------------------------------- //
+@import "./fonts/index.css";
+@import "./images/index.css";
+// components ----------------------------------------------- //
+@import "./components/form.scss";
+
+// main ===================================================== //
+body {
+
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 300;
+
+    background-color: var(--primary-backgound-color);
+
+}
+#root {
+
+    margin: 0 auto;
+    width: 1024px;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+
+}

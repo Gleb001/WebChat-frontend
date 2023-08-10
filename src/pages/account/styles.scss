@@ -1,0 +1,42 @@
+// user account
+.user-account-container {
+
+    margin: 10px auto;
+
+    width: 480px;
+    position: relative;
+    top: 20%;
+
+    color: var(--usuall-text-color);
+
+}
+.user-photo-container {
+
+    display: block;
+    width: 200px;
+    height: 200px;
+
+    margin: 30px auto;
+
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+.user-field {
+    margin: 10px 0;
+    width: 100%;
+    display: inline-block;
+
+    text-align: center;
+}
+.user-name {
+    font-weight: 700;
+    font-size: 2em;
+}
